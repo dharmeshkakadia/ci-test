@@ -8,5 +8,18 @@
     <artifactId>ci-test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.eluder.coveralls</groupId>
+                    <artifactId>coveralls-maven-plugin</artifactId>
+                    <version>3.0.0-SNAPSHOT</version>
+                    <configuration>
+                        <repoToken>yourcoverallsprojectrepositorytoken</repoToken>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
